@@ -157,25 +157,9 @@ window.onload = function () {
   drawArray = [rightLeg, leftLeg, rightArm, leftArm,  torso,  head, frame4, frame3, frame2, frame1]; 
 
   //OnKeyup Function
-     document.addEventListener('keypress', (event) => {
-
-        var keycode = String.fromCharCode(event.keyCode);
-        if(word.indexOf(word) > -1 ){
-          var e = (word.indexOf(guess));
-          if (e === -1) {
-            lives -= 1;
-            comments();
-            animate();
-          } else {
-            comments();
-          }
-          if(word[i] === e) {
-            guesses[i].innerHTML = guess;
-            counter += 1;
-          }
-        }
-
-    });
+    // document.addEventListener('keydown', function(e) {
+    //   console.log(e.key);
+    // });
      
 
   // OnClick Function
